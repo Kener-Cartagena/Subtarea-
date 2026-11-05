@@ -1,0 +1,187 @@
+* { -fx-font-family: "Segoe UI"; }
+
+.root { -fx-background-color: #080B14; }
+.side { -fx-background-color: #0F1424; }
+.logo { -fx-text-fill: #22D3EE; -fx-font-size: 20px; -fx-font-weight: bold; }
+.subtitle { -fx-text-fill: #6B7694; -fx-font-size: 12.5px; }
+
+.btn { -fx-background-radius: 10px; -fx-padding: 8 14; -fx-font-size: 13.5px; -fx-cursor: hand; }
+.btn-ghost  { -fx-background-color: transparent; -fx-text-fill: #6B7694; }
+.btn-ghost:hover { -fx-background-color: #161C30; -fx-text-fill: #E6EAF5; }
+.btn-soft   { -fx-background-color: #161C30; -fx-text-fill: #E6EAF5; }
+.btn-soft:hover { -fx-background-color: #1F2842; }
+.btn-primary { -fx-background-color: #22D3EE; -fx-text-fill: #080B14; -fx-font-weight: bold; }
+.btn-primary:hover { -fx-background-color: #0EA5C4; }
+
+.ticket-item { -fx-background-color: transparent; -fx-text-fill: #6B7694;
+    -fx-background-radius: 12px; -fx-alignment: center-left; -fx-padding: 10 14; -fx-font-size: 13.5px; }
+.ticket-item:hover { -fx-background-color: #161C30; }
+.ticket-item.selected { -fx-background-color: #161C30; -fx-text-fill: #E6EAF5;
+    -fx-border-color: #22D3EE; -fx-border-radius: 12px; -fx-border-width: 1px; }
+
+.card { -fx-background-color: #0F1424; -fx-background-radius: 18px;
+    -fx-border-color: #1F2842; -fx-border-radius: 18px; -fx-border-width: 1px;
+    -fx-padding: 16 20 14 20; }
+.phase-title { -fx-text-fill: #E6EAF5; -fx-font-size: 19px; -fx-font-weight: bold; }
+.cnt { -fx-text-fill: #22D3EE; -fx-font-size: 15.5px; -fx-font-weight: bold; }
+.chip { -fx-background-color: #161C30; -fx-background-radius: 8px; -fx-padding: 2 8; -fx-font-size: 14.5px; }
+.chip-mute { -fx-text-fill: #6B7694; }
+/* fechas de fase: objetivo (sólido, cian) vs. margen (punteado, ámbar) */
+.chip-date { -fx-text-fill: #22D3EE; -fx-border-color: #0EA5C4; -fx-border-radius: 8px; -fx-border-width: 1px; }
+.chip-buffer { -fx-text-fill: #F59E0B; -fx-background-color: transparent; -fx-border-color: #F59E0B;
+               -fx-border-style: dashed; -fx-border-radius: 8px; -fx-border-width: 1px; }
+.tooltip { -fx-background-color: #161C30; -fx-text-fill: #E6EAF5; -fx-font-size: 12.5px;
+           -fx-background-radius: 8px; -fx-padding: 6 10; }
+
+.track { -fx-background-color: #1F2842; -fx-background-radius: 3px; -fx-pref-height: 5px; -fx-max-height: 5px; }
+.fill  { -fx-background-color: #22D3EE; -fx-background-radius: 3px; -fx-pref-height: 5px; -fx-max-height: 5px; }
+
+.task-row { -fx-background-radius: 10px; -fx-padding: 3 6; }
+.task-row.grab   { -fx-background-color: #0E2F3B; }
+.task-row.target { -fx-background-color: #161C30; -fx-border-color: #8B5CF6;
+                   -fx-border-radius: 10px; -fx-border-width: 1px; }
+.task-row.drop   { -fx-background-color: #0D3B2C; -fx-border-color: #10B981;
+                   -fx-border-radius: 10px; -fx-border-width: 1px; }
+.task-row.soft   { -fx-background-color: #0A2A21; -fx-border-color: #0F6B4C;
+                   -fx-border-radius: 10px; -fx-border-width: 1px; }
+
+.grip { -fx-text-fill: #2A3555; -fx-font-size: 15px; -fx-font-weight: bold; -fx-cursor: move; }
+.task-check { -fx-text-fill: #E6EAF5; -fx-font-size: 16.5px; }
+.task-check .box { -fx-background-color: transparent; -fx-border-color: #1F2842;
+                   -fx-border-radius: 7px; -fx-border-width: 2px; }
+.task-check:selected .box { -fx-background-color: #22D3EE; -fx-border-color: #22D3EE; }
+.task-check:selected .mark { -fx-background-color: #080B14; }
+
+.result { -fx-text-fill: #0EA5C4; -fx-font-size: 15.5px; -fx-font-style: italic; }
+.empty-hint { -fx-text-fill: #6B7694; -fx-font-size: 19px; }
+.head-title { -fx-text-fill: #E6EAF5; -fx-font-size: 28px; -fx-font-weight: bold; }
+.head-sub { -fx-text-fill: #6B7694; -fx-font-size: 15.5px; }
+.preview-ok { -fx-text-fill: #22D3EE; -fx-font-size: 15.5px; }
+
+.ghost { -fx-background-color: #0E2F3B; -fx-border-color: #22D3EE; -fx-border-width: 1px;
+         -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-padding: 7 14;
+         -fx-text-fill: #E6EAF5; -fx-font-size: 14.5px; }
+
+.clean-scroll { -fx-background: transparent; -fx-background-color: transparent; }
+.clean-scroll > .viewport { -fx-background-color: transparent; }
+.clean-scroll .scroll-bar:vertical { -fx-background-color: transparent; -fx-pref-width: 14; -fx-padding: 2; }
+.clean-scroll .scroll-bar:vertical .track { -fx-background-color: #161C30; -fx-background-radius: 7; -fx-border-color: transparent; }
+.clean-scroll .scroll-bar:vertical .thumb { -fx-background-color: #22D3EE; -fx-background-radius: 7; -fx-background-insets: 0; -fx-opacity: 0.55; }
+.clean-scroll .scroll-bar:vertical .thumb:hover { -fx-opacity: 0.85; }
+.clean-scroll .scroll-bar:vertical .thumb:pressed { -fx-opacity: 1; }
+.clean-scroll .scroll-bar .increment-button, .clean-scroll .scroll-bar .decrement-button { -fx-padding: 0; -fx-pref-height: 0; -fx-pref-width: 0; -fx-opacity: 0; }
+.clean-scroll .scroll-bar .increment-arrow, .clean-scroll .scroll-bar .decrement-arrow { -fx-padding: 0; -fx-shape: ""; }
+.clean-scroll .scroll-bar:horizontal { -fx-pref-height: 0; -fx-opacity: 0; }
+
+/* header de fase clickeable (colapsar / expandir) */
+.phase-head { -fx-padding: 4 4 4 2; -fx-background-radius: 8px; }
+.phase-head:hover { -fx-background-color: #161C30; }
+.phase-head:hover .phase-title { -fx-text-fill: #22D3EE; }
+.arrow { -fx-font-size: 16px; -fx-text-fill: #22D3EE; -fx-min-width: 18px; }
+
+.dialog { -fx-background-color: #0F1424; }
+.field-label { -fx-text-fill: #6B7694; -fx-font-size: 13px; }
+.field { -fx-background-color: #161C30; -fx-border-color: #1F2842; -fx-border-radius: 10px;
+         -fx-background-radius: 10px; -fx-text-fill: #E6EAF5; -fx-padding: 8 10; -fx-font-size: 14px; }
+.field:focused { -fx-border-color: #22D3EE; }
+.area { -fx-background-color: #161C30; -fx-background-radius: 10px;
+        -fx-control-inner-background: #161C30; -fx-text-fill: #E6EAF5; -fx-font-size: 14px; }
+.choice-box { -fx-background-color: #161C30; -fx-background-radius: 10px; -fx-mark-color: #22D3EE; }
+.choice-box .label { -fx-text-fill: #E6EAF5; }
+.context-menu { -fx-background-color: #161C30; -fx-background-radius: 10px; }
+
+.context-menu .menu-item .label { -fx-text-fill: #E6EAF5; -fx-font-size: 13.5px; }
+.context-menu .menu-item:focused { -fx-background-color: #22D3EE; }
+.context-menu .menu-item:focused .label { -fx-text-fill: #080B14; }
+
+/* selector de fechas */
+.form-error { -fx-text-fill: #F43F5E; -fx-font-size: 13px; }
+.date-picker { -fx-background-color: transparent; }
+.date-picker > .text-field { -fx-background-color: #161C30; -fx-border-color: #1F2842; -fx-border-radius: 10px;
+         -fx-background-radius: 10px; -fx-text-fill: #E6EAF5; -fx-prompt-text-fill: #6B7694;
+         -fx-padding: 8 10; -fx-font-size: 14px; }
+.date-picker > .text-field:focused { -fx-border-color: #22D3EE; }
+.date-picker.invalid > .text-field { -fx-border-color: #F43F5E; }
+.date-picker > .arrow-button { -fx-background-color: transparent; }
+.date-picker > .arrow-button > .arrow { -fx-background-color: #22D3EE; }
+.date-picker-popup { -fx-background-color: #0F1424; -fx-border-color: #1F2842; -fx-background-radius: 12px; -fx-border-radius: 12px; }
+.date-picker-popup .month-year-pane { -fx-background-color: #161C30; }
+.date-picker-popup .spinner .label { -fx-text-fill: #E6EAF5; }
+.date-picker-popup .spinner .button { -fx-background-color: transparent; }
+.date-picker-popup .spinner .button .left-arrow, .date-picker-popup .spinner .button .right-arrow { -fx-background-color: #22D3EE; }
+.date-picker-popup .day-name-cell, .date-picker-popup .week-number-cell { -fx-text-fill: #6B7694; }
+.date-picker-popup .day-cell { -fx-background-color: transparent; -fx-text-fill: #E6EAF5; }
+.date-picker-popup .day-cell:hover { -fx-background-color: #1F2842; }
+.date-picker-popup .day-cell:focused { -fx-background-color: #1F2842; }
+.date-picker-popup .day-cell:selected { -fx-background-color: #22D3EE; -fx-text-fill: #080B14; }
+.date-picker-popup .today { -fx-border-color: #22D3EE; -fx-border-radius: 6px; }
+.date-picker-popup .other-month { -fx-text-fill: #2A3555; }
+
+.cnt-completed {
+    -fx-text-fill: #10B981; /* Verde esmeralda */
+    -fx-font-weight: bold;
+}
+
+/* ---- objetivo de la fase (visible aunque la fase esté colapsada) ---- */
+.goal { -fx-text-fill: #9AA5C4; -fx-font-size: 14px; }
+
+/* ---- reordenar fases: asa discreta que se ilumina al acercarse ---- */
+.phase-grip { -fx-text-fill: #2A3555; -fx-font-size: 16px; -fx-font-weight: bold;
+              -fx-cursor: move; -fx-padding: 0 4 0 2; }
+.phase-head:hover .phase-grip { -fx-text-fill: #6B7694; }
+.phase-grip:hover { -fx-text-fill: #22D3EE; }
+/* línea que marca dónde caerá la fase */
+.drop-line { -fx-background-color: #22D3EE; -fx-background-radius: 2px;
+             -fx-effect: dropshadow(gaussian, #22D3EE, 10, 0.45, 0, 0); }
+/* destello breve en la fase recién movida */
+.card.phase-drop { -fx-border-color: #10B981; -fx-background-color: #0C2A26; }
+
+/* ---- resumen del ticket ---- */
+.stat { -fx-background-color: #0F1424; -fx-background-radius: 14px;
+        -fx-border-color: #1F2842; -fx-border-radius: 14px; -fx-border-width: 1px;
+        -fx-padding: 10 16 11 16; -fx-pref-width: 175; -fx-min-width: 150; }
+.stat-label { -fx-text-fill: #6B7694; -fx-font-size: 12.5px; }
+.stat-value { -fx-text-fill: #E6EAF5; -fx-font-size: 22px; -fx-font-weight: bold; }
+.stat-sub { -fx-text-fill: #9AA5C4; -fx-font-size: 12.5px; }
+
+/* ---- margen: botones − / + dentro del chip y estado "usado" ---- */
+.btn.mini { -fx-padding: 0 7; -fx-font-size: 14px; -fx-background-radius: 6px; }
+.chip-buffer-used { -fx-background-color: #2A1F08; -fx-border-style: solid; }
+
+/* ---- vista "copiar fase": texto ordenado y seleccionable ---- */
+.preview-area { -fx-background-color: #161C30; -fx-background-radius: 10px;
+                -fx-control-inner-background: #161C30; -fx-text-fill: #E6EAF5;
+                -fx-border-color: #1F2842; -fx-border-radius: 10px; -fx-border-width: 1px;
+                -fx-highlight-fill: #22D3EE; -fx-highlight-text-fill: #080B14;
+                -fx-font-size: 15px; -fx-padding: 4; }
+.preview-area:focused { -fx-border-color: #22D3EE; }
+.preview-area .content { -fx-background-color: #161C30; }
+
+/* ---- botones del ticket en modo ícono (cuando no cabe el texto) ---- */
+.btn.btn-compact { -fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 6 13; }
+
+/* ---- nombre del ticket: tarjeta flotante al pasar el mouse ---- */
+.name-pop { -fx-background-color: #161C30; -fx-background-radius: 14px;
+            -fx-border-color: #22D3EE; -fx-border-radius: 14px; -fx-border-width: 1px;
+            -fx-padding: 6 14; -fx-text-fill: #E6EAF5; -fx-font-size: 28px; -fx-font-weight: bold;
+            -fx-effect: dropshadow(gaussian, rgba(34,211,238,0.32), 22, 0.12, 0, 4); }
+
+/* ---- tarjeta "Cierre" del resumen (clickeable) ---- */
+.stat-link { -fx-cursor: hand; }
+.stat-link:hover { -fx-border-color: #22D3EE; -fx-background-color: #0E2F3B;
+                   -fx-effect: dropshadow(gaussian, rgba(34,211,238,0.28), 16, 0.1, 0, 2); }
+.stat-link:hover .stat-label { -fx-text-fill: #22D3EE; }
+
+/* ---- pantalla de Cierre: criterios, checklist y notas ---- */
+.closing-text   { -fx-text-fill: #E6EAF5; -fx-font-size: 15.5px; }
+.closing-step   { -fx-text-fill: #E6EAF5; -fx-font-size: 16px; -fx-font-weight: bold; }
+.closing-detail { -fx-text-fill: #9AA5C4; -fx-font-size: 14.5px; }
+.closing-num    { -fx-text-fill: #22D3EE; -fx-font-size: 16px; -fx-font-weight: bold; -fx-min-width: 24px; }
+.closing-dot    { -fx-text-fill: #22D3EE; -fx-font-size: 16px; -fx-min-width: 24px; }
+.closing-note   { -fx-background-color: rgba(34,211,238,0.08); -fx-background-radius: 10px;
+                  -fx-border-color: transparent transparent transparent #22D3EE;
+                  -fx-border-width: 0 0 0 3px; -fx-border-radius: 10px; -fx-padding: 10 14; }
+.closing-note-title { -fx-text-fill: #22D3EE; -fx-font-size: 14px; -fx-font-weight: bold; }
+/* casilla marcada: texto atenuado y tachado */
+.closing-check:selected { -fx-text-fill: #6B7694; }
+.closing-check:selected > .text { -fx-strikethrough: true; }
